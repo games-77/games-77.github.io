@@ -1,12 +1,5 @@
-<head><script src="js/style.js">styleload();</script><script onload="setTitle()" src="js/title.js"></script>
-<script>
-window.onload = geoCheck; // Remove the parentheses after geoCheck
-function geoCheck() {
-  if (window.location.hostname !== "geometry-games.online") { // Use === for comparison
-    window.location.href = "https://geometry-games.online"; 
-  }
-}
-</script>
+<head><script onload="setTitle()" src="js/title.js"></script>
+  <link rel="stylesheet" id="style" href="/css/global.css">
 </head>
 <title></title>
 
@@ -21,9 +14,8 @@ function geoCheck() {
 
 </div>
 <div id="modebutton">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<button type="button" onclick="switchstyles();" id="dark mode">Change color</button>
-<link rel="stylesheet" id="style" href="">
+
+
 </div>
 
 <center><iframe onload="styleload();" src="legal-embed.html" style="top: 60px; left: 0px; bottom:0; right:0; width:100%; height:100%; border:0;"></iframe></center>

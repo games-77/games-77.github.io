@@ -25,7 +25,7 @@ function launchGame(contentURL){
     GamesDiv.id = "GamesDiv__";
     GamesDiv.allow="autoplay; fullscreen; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write";
     GamesDiv.src = contentURL;
-    GamesDiv.style.cssText = 'position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; z-index: 1000001; background: #000000; background: var(--background-style); .iframe{display: flex; justify-content: center;}';
+    GamesDiv.style.cssText = 'position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; z-index: 1000001; background: linear-gradient(160deg, hsl(263, 70%, 6%) 0%, hsl(263, 50%, 12%) 25%, hsl(263, 40%, 18%) 50%, hsl(263, 50%, 12%) 75%, hsl(263, 70%, 6%) 100%); .iframe{display: flex; justify-content: center;}';
     //item to center content
     var center = document.createElement('center');
     center.style = '  height: 100%; overflow-y: auto;';
@@ -40,7 +40,7 @@ function launchGame(contentURL){
     frame.style.height = '100%';
     frame.style.width = '100%';
     frame.style.border = 'none';
-    frame.style = `background: #000000; max-width: 72vh; min-width: 960px; max-height: 40.5vh; min-height: 540px; border: none;`;
+    frame.style = `position: relative; left: -30px; background: #000000; max-width: 88vh; min-width: 1020px; max-height: 60vh; min-height: 590px; border: none;`;
     frame.src = "loader.html?game=" + contentURL;
     frame.id = 'gameframe_';
     //add frame to div for frame
@@ -50,8 +50,8 @@ function launchGame(contentURL){
     //close game button
     var closethegame = document.createElement('button');
     closethegame.id = 'closethegamegame';
-    closethegame.style = "top:10px; left:10px; position: fixed;";
-    closethegame.innerHTML = svg_Back + `Close &nbsp; &nbsp; &nbsp; &nbsp;`;
+    closethegame.style = "top:10px; left:10px; position: fixed; height: 45px; width: 45px;";
+    closethegame.innerHTML = svg_Back;
     closethegame.style.zIndex = '10000000000000000000';
     //add close game button to game div
     GamesDiv.appendChild(closethegame);
