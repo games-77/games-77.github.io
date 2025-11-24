@@ -41,7 +41,7 @@ function launchGame(contentURL){
     frame.style.width = '100%';
     frame.style.border = 'none';
     frame.style = `position: relative; left: -30px; background: #000000; max-width: 88vh; min-width: 1020px; max-height: 60vh; min-height: 590px; border: none;`;
-    frame.src = "loader.html?game=" + contentURL;
+    frame.src =/* "loader.html?game=" +*/ contentURL;
     frame.id = 'gameframe_';
     //add frame to div for frame
     frameDiv.appendChild(frame);
