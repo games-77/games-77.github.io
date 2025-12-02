@@ -6,7 +6,7 @@ adsFetchGameframe();
     localStorage.setItem('cloakurl', contentURL);
     let element = document.getElementById('gameframe_')
         if (element !== null) {
-element.src = "/loader.html?game=" + contentURL;
+element.src = contentURL;
         localStorage.setItem('cloakurl', element.src);
         element.contentWindow.focus();
         element.scrollIntoView({ 
